@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finance Home</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    .topbar {
+      background-color: #3399ff;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .profile-pic {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #ccc;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      font-size: 18px;
+    }
+
+    .icons a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .icons a:hover {
+      color: #dcdcdc;
+    }
+
+    .dashboard {
+      max-width: 500px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #e6f2ff;
+      padding: 10px;
+      border-radius: 10px;
+      color: #3399ff;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #333;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .resumo {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .resumo a {
+      text-decoration: none;
+      width: 30%;
+    }
+
+    .box {
+      background-color: #003366;
+      color: white;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+    }
+
+    .box h3 {
+      margin: 0;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .box p {
+      font-size: 16px;
+      margin: 5px 0 0;
+    }
+
+    .saldo {
+      background-color: #001f33;
+    }
+
+    .botao {
+      margin: 20px auto;
+      background-color: #001f33;
+      color: white;
+      padding: 10px;
+      width: 100px;
+      border: none;
+      border-radius: 10px;
+      display: block;
+      cursor: pointer;
+    }
+
+    .transacoes-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .transacoes-header h2 {
+      margin: 0;
+    }
+
+    .transacoes-header button {
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .transacao {
+      background-color: #3399ff;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .transacao i {
+      margin-right: 8px;
+    }
+
+    .transacao span {
+      background-color: white;
+      color: red;
+      padding: 3px 10px;
+      border-radius: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="giovana.png" alt="Perfil" class="profile-pic" />
+    <div class="icons">
+      <a href="#notificacoes" title="Notificações">
+        <i class="fa-solid fa-bell"></i>
+      </a>
+      <a href="#chat" title="Chat">
+        <i class="fa-solid fa-comments"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <h1>Bom dia, Giovana!</h1>
+
+    <h2>Rendimentos</h2>
+    <div class="resumo">
+      <a href="#receitas">
+        <div class="box">
+          <h3><i class="fa-solid fa-chart-line"></i> Receitas</h3>
+          <p>R$2.000</p>
+        </div>
+      </a>
+      <a href="#saldo">
+        <div class="box saldo">
+          <h3>Saldo</h3>
+          <p>R$1.320</p>
+        </div>
+      </a>
+      <a href="#saidas">
+        <div class="box">
+          <h3><i class="fa-solid fa-chart-pie"></i> Saídas</h3>
+          <p>R$680</p>
+        </div>
+      </a>
+    </div>
+
+    <button class="botao">Cartões</button>
+
+    <div class="transacoes-header">
+      <h2>Últimas transferências</h2>
+      <button>Adicionar outros</button>
+    </div>
+
+    <div class="transacao">
+      <i class="fa-solid fa-cart-shopping"></i> Mercado <span>- R$100</span>
+    </div>
+    <div class="transacao">
+      <i class="fa-solid fa-shirt"></i> Roupas <span>- R$280</span>
+    </div>
+    <div class="transacao">
+      <i class="fa-solid fa-receipt"></i> Contas <span>- R$300</span>
+    </div>
+  </div>
+</body>
+</html>
